@@ -12,6 +12,8 @@ public class Triangulo {
 	}
 
 	public Double calcularPerimetroTriangulo(){
+		Double p=this.ladoUno+this.ladoDos+this.ladoTres;
+		System.out.print(p.doubleValue());
 		return this.ladoUno+this.ladoDos+this.ladoTres;
 	}
 	
