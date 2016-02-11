@@ -1,0 +1,16 @@
+package ar.edu.unlam.tallerweb.formas;
+
+public class Circulo {
+	Double radio;
+	public Circulo(Double radio){
+		this.radio=radio;
+	}
+	
+	public Double CalcularAreaCirculo(){
+		return Math.pow(this.radio.doubleValue(), 2)*Math.PI;
+	}
+	
+	public Double CalcularPerimetroCirculo(){
+		return this.radio.doubleValue()*2*Math.PI;
+	}
+}

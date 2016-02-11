@@ -1,0 +1,17 @@
+package ar.edu.unlam.tallerweb.formas;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CirculoTest {
+
+	@Test
+	public void testCalcularAreaCirculo() {
+		Circulo nuevoCirculo = new Circulo(3.00);
+		Double esperado= 28.26;
+		Double actual= nuevoCirculo.CalcularAreaCirculo();
+		assertEquals(esperado.doubleValue(),actual.doubleValue(),0.01);
+	}
+
+}
