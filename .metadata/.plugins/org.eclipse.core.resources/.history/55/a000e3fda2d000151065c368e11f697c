@@ -12,14 +12,12 @@ public class Triangulo {
 	}
 
 	public Double calcularPerimetroTriangulo(){
-		Double p=this.ladoUno+this.ladoDos+this.ladoTres;
-		System.out.print(p.doubleValue());
 		return this.ladoUno+this.ladoDos+this.ladoTres;
 	}
 	
 	public Double calcularAreaTriangulo(){
 		Double semiperimetro = (calcularPerimetroTriangulo().doubleValue())/2;
-		System.out.print(semiperimetro.doubleValue());
+		System.out.print(semiperimetro);
 		return Math.sqrt(semiperimetro.doubleValue()*(semiperimetro.doubleValue()-ladoUno.doubleValue())*(semiperimetro.doubleValue()*ladoDos.doubleValue())*(semiperimetro.doubleValue()-ladoTres.doubleValue()));
 	}
 }

@@ -26,7 +26,7 @@ public class TrianguloTest {
 	@Test
 	public void testCalcularAreaTrianguloEscaleno() {
 		Triangulo nuevoTriangulo = new Triangulo(5.00,6.00,7.00);
-		Double esperado=14.69 ;
+		Double esperado=15.59 ;
 		Double actual= nuevoTriangulo.calcularAreaTriangulo();
 		assertEquals(esperado.doubleValue(),actual.doubleValue(),0.1);
 
