@@ -1,0 +1,20 @@
+package ar.edu.unlam.tallerweb.formas;
+
+public class Triangulo {
+	Double ladoUno;
+	Double ladoDos;
+	Double ladoTres;
+	
+	public Triangulo(Double ladoUno,Double ladoDos,Double ladoTres){
+		this.ladoUno=ladoUno;
+		this.ladoDos=ladoDos;
+		this.ladoTres=ladoTres;
+	}
+
+	public Double calcularPerimetroTriangulo(){
+		return this.ladoUno+this.ladoDos+this.ladoTres;
+	
+	public Double calcularAreaTriangulo(){
+		
+	}
+}

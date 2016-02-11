@@ -1,6 +1,22 @@
 package ar.edu.unlam.tallerweb.formas;
 
 public class Triangulo {
+	Double ladoUno;
+	Double ladoDos;
+	Double ladoTres;
 	
+	public Triangulo(Double ladoUno,Double ladoDos,Double ladoTres){
+		this.ladoUno=ladoUno;
+		this.ladoDos=ladoDos;
+		this.ladoTres=ladoTres;
+	}
 
+	public Double calcularPerimetroTriangulo(){
+		return this.ladoUno+this.ladoDos+this.ladoTres;
+	}
+	
+	public Double calcularAreaTriangulo(){
+		Double semiperimetro = (calcularPerimetroTriangulo().doubleValue())/2;
+		return Math.sqrt(semiperimetro.doubleValue()*(semiperimetro.doubleValue()-ladoUno.doubleValue())*(semiperimetro.doubleValue()*ladoDos.doubleValue())*(semiperimetro.doubleValue()-ladoTres.doubleValue()));
+	}
 }
